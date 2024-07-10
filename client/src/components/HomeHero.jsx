@@ -31,10 +31,10 @@ const HomeHero = () => {
 						fontSize={{ base: "2xl", md: "4xl" }}
 						fontWeight={600}
 						mb={2}>
-						Amazing Playlists
+						Amazing Audio Messages
 					</Heading>
 					<Text fontSize={{ base: "sm", md: "md" }} w="80%">
-						Listen to the best playlists curated by us and our users.
+						Listen to the Amazing Messages by Rev. Elijah Amusan
 					</Text>
 					<Link to="/playlists">
 						<Button

@@ -40,10 +40,10 @@ const LibraryPage = () => {
 					fontSize={{ base: "lg", md: "2xl" }}
 					fontWeight="semibold"
 					mb={{ base: 1, md: 3 }}>
-					Library
+					Messages
 				</Heading>
 				<Text fontSize="sm" color="zinc.400">
-					Discover interesting songs
+					Discover Pragmatic Teachings
 				</Text>
 			</Box>
 			{loading && songs.length < 1 && (

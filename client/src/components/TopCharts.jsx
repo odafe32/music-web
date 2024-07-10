@@ -50,7 +50,7 @@ const TopCharts = () => {
 			variants={appear}
 			p={{ base: 2, md: 4 }}>
 			<Heading as="h3" fontSize="lg" fontWeight={500} mt={2} mb={6}>
-				Top Charts
+				Pragmatic Teachings
 			</Heading>
 			{loading ? (
 				<Flex align="center" color="accent.main" justify="center" minH="20rem">

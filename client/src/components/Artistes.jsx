@@ -33,7 +33,7 @@ const Artistes = () => {
 		<Box mt={8}>
 			<Flex align="center" justify="space-between" mb={3}>
 				<Heading as="h3" fontSize={{ base: "lg", md: "xl" }} fontWeight={500}>
-					You May Like
+					More 
 				</Heading>
 				<Link to="/artistes">
 					<Button

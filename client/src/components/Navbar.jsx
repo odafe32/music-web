@@ -43,11 +43,10 @@ const MobileNav = () => {
 			<Flex align="center" justify="space-between" p={2}>
 				<Link to="/home">
 					<Flex color="accent.main" align="center" gap={4}>
-						<BiMusic color="inherit" size={30} />
-
-						<Heading as="h1" fontWeight="semibold" fontSize="2xl">
-							BeatBox
-						</Heading>
+					<img src="/logo.png" alt="logo"
+				style={{
+					width: "100px"
+				}} />
 					</Flex>
 				</Link>
 				<Button variant="unstyled" onClick={toggleNav}>
@@ -77,10 +76,10 @@ const DesktopNav = () => {
 			bg="zinc.900">
 			<Flex direction="column" minH="100vh" p={4}>
 				<Flex color="accent.main" align="center" gap={4}>
-					<BiMusic color="inherit" size={30} />
-					<Heading as="h1" fontWeight="semibold" fontSize="2xl">
-						BeatBox
-					</Heading>
+					<img src="/logo.png" alt="logo"
+				style={{
+					width: "100px"
+				}} />
 				</Flex>
 				<NavContent />
 			</Flex>
@@ -146,6 +145,27 @@ const NavContent = () => {
 						</Button>
 					)}
 				</NavLink>
+				<NavLink to="/album">
+					{({ isActive }) => (
+						<Button
+							bg={isActive ? "accent.main" : "transparent"}
+							_hover={
+								isActive ? { opacity: 0.8 } : { bg: "accent.transparent" }
+							}
+							rounded="base"
+							display="inline-flex"
+							alignItems="center"
+							justifyContent="flex-start"
+							gap={6}
+							w="full"
+							py={6}
+							px={4}>
+							<AiFillHeart size={20} />
+							<span>Album</span>
+						</Button>
+					)}
+				</NavLink>
+				
 				<NavLink to="/playlists">
 					{({ isActive }) => (
 						<Button

@@ -19,7 +19,7 @@ const HomePage = () => {
 				<HomeHero />
 				<SmallSection title="New Releases" endpoint="/songs/releases" />
 				<Artistes />
-				<SmallSection title="Popular Around You" endpoint="/songs/top" />
+				<SmallSection title="Listen online" endpoint="/songs/top" />
 			</GridItem>
 			<GridItem colSpan={3} p={4}>
 				<TopCharts />
