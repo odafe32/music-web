@@ -198,6 +198,17 @@ const MusicPlayer = () => {
 			likeSong();
 		}
 	};
+	
+	// const handleLike = () => {
+	// 	if (!token) {
+	// 		dispatch(
+	// 			setModalMessage("Please login to save songs to your favorites.")
+	// 		);
+	// 		onOpen();
+	// 	} else {
+	// 		likeSong();
+	// 	}
+	// };
 
 	return (
 		<>

@@ -1,5 +1,5 @@
 import { BiMenuAltRight, BiMusic } from "react-icons/bi";
-import { AiFillHeart, AiFillHome, AiOutlineLogout } from "react-icons/ai";
+import { AiFillEye, AiFillHeart, AiFillHome, AiOutlineLogout, AiOutlineMobile } from "react-icons/ai";
 import { BsHeadphones } from "react-icons/bs";
 import { TiTimes } from "react-icons/ti";
 import { HiOutlineUserCircle, HiViewGrid } from "react-icons/hi";
@@ -145,7 +145,7 @@ const NavContent = () => {
 						</Button>
 					)}
 				</NavLink>
-				<NavLink to="/album">
+				<NavLink to="/artistes">
 					{({ isActive }) => (
 						<Button
 							bg={isActive ? "accent.main" : "transparent"}
@@ -160,8 +160,8 @@ const NavContent = () => {
 							w="full"
 							py={6}
 							px={4}>
-							<AiFillHeart size={20} />
-							<span>Album</span>
+							<AiFillEye size={20} />
+							<span>Albums</span>
 						</Button>
 					)}
 				</NavLink>
@@ -203,6 +203,26 @@ const NavContent = () => {
 							px={4}>
 							<AiFillHeart size={20} />
 							<span>Favorites</span>
+						</Button>
+					)}
+				</NavLink>
+				<NavLink to="">
+					{({ isActive }) => (
+						<Button
+							bg={isActive ? "accent.color" : "transparent"}
+							_hover={
+								isActive ? { opacity: 0.8 } : { bg: "accent.transparent" }
+							}
+							rounded="base"
+							display="inline-flex"
+							alignItems="center"
+							justifyContent="flex-start"
+							gap={6}
+							w="full"
+							py={6}
+							px={4}>
+							<AiOutlineMobile size={20} />
+							<span>upload Tapes</span>
 						</Button>
 					)}
 				</NavLink>

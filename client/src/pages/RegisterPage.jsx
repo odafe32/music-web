@@ -68,7 +68,7 @@ const RegisterPage = () => {
 					<Heading fontSize="2xl" color="zinc.200">
 						Register
 					</Heading>
-					<Text fontSize="sm">To continue enjoying BeatBox</Text>
+					<Text fontSize="sm">To continue enjoying Messages</Text>
 				</Box>
 				<Flex direction="column" gap={4}>
 					<FormControl>

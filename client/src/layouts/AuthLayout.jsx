@@ -23,13 +23,7 @@ const AuthLayout = () => {
 				pl={6}
 				h={{ base: "full", md: "5rem" }}>
 				<Flex align="center" color="accent.main" justify="flex-start" gap={2}>
-					<BiMusic size={30} />
-					<Heading
-						fontWeight="semibold"
-						color="gray.200"
-						fontSize={{ base: "lg", md: "2xl" }}>
-						BeatBox
-					</Heading>
+					<img src="/logo.png" alt="logo" style={{width: "100px"}} />
 				</Flex>
 			</Flex>
 			<Box bg="zinc.950" h="full" minH="91vh">
